@@ -25,19 +25,41 @@ A modern FlashCard Quiz App developed using Flutter.
 - Google Fonts
 - Flutter Animate
 
-<h2>📸 Screenshots</h2>
+## 📸 Screenshots
 
-<p align="center">
-  <img src="assets/screenshots/home.png" width="250"/>
-  <img src="assets/screenshots/question.png" width="250"/>
-  <img src="assets/screenshots/answer.png" width="250"/>
-</p>
+### 🏠 Home Screen
 
-<p align="center">
-  <img src="assets/screenshots/add_card.png" width="250"/>
-  <img src="assets/screenshots/edit_card.png" width="250"/>
-  <img src="assets/screenshots/statistics.png" width="250"/>
-</p>
+![Home Screen](assets/screenshots/home.png)
+
+---
+
+### 🃏 Question Card
+
+![Question](assets/screenshots/question.png)
+
+---
+
+### 💡 Answer Card
+
+![Answer](assets/screenshots/answer.png)
+
+---
+
+### ➕ Add Flashcard
+
+![Add Card](assets/screenshots/add_card.png)
+
+---
+
+### ✏️ Edit Flashcard
+
+![Edit Card](assets/screenshots/edit_card.png)
+
+---
+
+### 📊 Statistics
+
+![Statistics](assets/screenshots/statistics.png)
 
 ## 👨‍💻 Developer
 
