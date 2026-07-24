@@ -1,22 +1,22 @@
-# 📚 FlashCard Quiz App
+# FlashCard Quiz App
 
 A modern FlashCard Quiz App developed using Flutter.
 
-## ✨ Features
+## Features
 
-- 📖 Question & Answer Flashcards
-- 👁️ Show/Hide Answer
-- ➕ Add Flashcards
-- ✏️ Edit Flashcards
-- 🗑️ Delete Flashcards
-- ⬅️ Previous / Next Navigation
-- 📊 Study Statistics
-- 🎨 Modern Material 3 UI
-- 🌈 Beautiful Gradient Design
-- 💾 Local Data Storage
-- 📱 Responsive Mobile Design
+- Question & Answer Flashcards
+- Show/Hide Answer
+- Add Flashcards
+- Edit Flashcards
+- Delete Flashcards
+- Previous / Next Navigation
+- Study Statistics
+- Modern Material 3 UI
+- Beautiful Gradient Design
+- Local Data Storage
+- Responsive Mobile Design
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - Flutter
 - Dart
