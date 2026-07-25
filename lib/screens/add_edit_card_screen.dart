@@ -3,9 +3,7 @@ import '../models/flashcard.dart';
 
 class AddEditCardScreen extends StatefulWidget {
   final Flashcard? flashcard;
-
   const AddEditCardScreen({super.key, this.flashcard});
-
   @override
   State<AddEditCardScreen> createState() => _AddEditCardScreenState();
 }
@@ -13,23 +11,19 @@ class AddEditCardScreen extends StatefulWidget {
 class _AddEditCardScreenState extends State<AddEditCardScreen> {
   final TextEditingController questionController = TextEditingController();
   final TextEditingController answerController = TextEditingController();
-
   @override
   void initState() {
     super.initState();
-
     if (widget.flashcard != null) {
       questionController.text = widget.flashcard!.question;
       answerController.text = widget.flashcard!.answer;
     }
   }
-
   void saveCard() {
     if (questionController.text.isEmpty ||
         answerController.text.isEmpty) {
       return;
     }
-
     Navigator.pop(
       context,
       Flashcard(
@@ -38,7 +32,6 @@ class _AddEditCardScreenState extends State<AddEditCardScreen> {
       ),
     );
   }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -49,13 +42,10 @@ class _AddEditCardScreenState extends State<AddEditCardScreen> {
               : "Edit Flashcard",
         ),
       ),
-
       body: Padding(
         padding: const EdgeInsets.all(20),
-
         child: Column(
           children: [
-
             TextField(
               controller: questionController,
               decoration: const InputDecoration(
@@ -63,9 +53,7 @@ class _AddEditCardScreenState extends State<AddEditCardScreen> {
                 border: OutlineInputBorder(),
               ),
             ),
-
             const SizedBox(height: 20),
-
             TextField(
               controller: answerController,
               decoration: const InputDecoration(
@@ -73,12 +61,9 @@ class _AddEditCardScreenState extends State<AddEditCardScreen> {
                 border: OutlineInputBorder(),
               ),
             ),
-
             const SizedBox(height: 30),
-
             SizedBox(
               width: double.infinity,
-
               child: ElevatedButton(
                 onPressed: saveCard,
                 child: const Text("Save"),
