@@ -6,14 +6,12 @@ class FlashcardWidget extends StatelessWidget {
   final Flashcard flashcard;
   final bool showAnswer;
   final VoidCallback onToggleAnswer;
-
   const FlashcardWidget({
     super.key,
     required this.flashcard,
     required this.showAnswer,
     required this.onToggleAnswer,
   });
-
   @override
   Widget build(BuildContext context) {
     return AnimatedContainer(
@@ -45,15 +43,13 @@ class FlashcardWidget extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-
             const Icon(
               Icons.menu_book_rounded,
               color: Colors.white,
               size: 60,
             ),
-
+            
             const SizedBox(height: 20),
-
             Text(
               showAnswer ? "Answer" : "Question",
               style: GoogleFonts.poppins(
@@ -62,9 +58,8 @@ class FlashcardWidget extends StatelessWidget {
                 fontWeight: FontWeight.w600,
               ),
             ),
-
+ 
             const SizedBox(height: 20),
-
             AnimatedSwitcher(
               duration: const Duration(milliseconds: 400),
               child: Text(
@@ -82,7 +77,6 @@ class FlashcardWidget extends StatelessWidget {
             ),
 
             const SizedBox(height: 35),
-
             SizedBox(
               width: double.infinity,
               child: ElevatedButton.icon(
@@ -110,7 +104,6 @@ class FlashcardWidget extends StatelessWidget {
                 ),
               ),
             ),
-
           ],
         ),
       ),
